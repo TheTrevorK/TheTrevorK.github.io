@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/367bb05eac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+</head>
+<body>
+<div  id="header">
+    <div class="container">
+        <div class ='scroll-up-btn'>
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <nav>
+            <h1 class="logo">TK</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="showcase-content">
+            <div class = "showcase-text">
+                <div class = "text-1">Hello, my name is</div>
+                <div class = "text-2">Trevor Khan</div>
+                <div class = "text-3"> And I'm a <span class = "typing-1"></span></div>
+                    <a href="Trevor_Khan_Resume.pdf" download class="btn ">Download Resume</a>
+            </div>
+            <div class="showcase-img"><img src="images/ProfilePic.jpg"></div>
+        </div>
+    </div>
+</div>
+<!-----about------->
+<div id="about">
+    <div class="container">
+        <div  class="row">
+            <div class="about-col-1">
+                <img src="images/ProfilePic1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Quick learner and a hard working recent graduate with a Master of Science in Advanced Data Analytics. Experience using
+                    Tableau, SQL, Python, R, Excel, and SAS Enterprise. Interested in continuing to learn new skills and tools in the field of
+                    Data Analytics to advance my knowledge. Looking for a position as a Data Analyst to utilize knowledge and benefit the
+                    company.
+    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills</span><br>Python, SQL, SAS Enterprise Miner, R <br> Microsoft Excel, Tableau, Relational Databases</li>
+                        <li><span>Soft Skills</span><br>Group Collaborations, Time Management, Medical Terminology</li>
+                        <li><span>Certifications</span><br>Sololearn - Python for Beginners - August 2021<br>LinkedIn Learning – Learning SQL Programming – February 2023</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>Substitute Teacher</li>
+                        <li><span>2020-2020</span><br>Oracle BI Publisher Report Builder</li>
+                        <li><span>2019-2020</span><br>Aquaponic Technician</li>
+                        <li><span>2018-2019</span><br>Medical Office Assistant</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Masters of Science in Advanced Data Analytics</li>
+                        <li><span>2018</span><br>Bachelor of Science in Biology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!---------services-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fab fa-python"></i>
+                <h2> Data Cleaning & Analysis in Python</h2>
+                <p> Through my coursework and personal projects, I have developed my skills in data cleaning and analysis of large datasets.</p>
+                <a href="https://github.com/TheTrevorK/Python-Projects" target="_blank" rel="noopener">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <h2> SQL Databases</h2>
+                <p> Worked on projects using different sql databases including Microsoft SQL Server, Postgresql, and MySQL.</p>
+                <a href="https://github.com/TheTrevorK/SQL-Project" target="_blank" rel="noopener">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-chart-bar"></i>
+                <h2> Tableau Visualization</h2>
+                <p> Created dashboards using excel documents to discover insights from the dataset that was then used to generate powerpoint insight summary to present my findings on.</p>
+                <a href="https://github.com/TheTrevorK/Tableau-Project" target="_blank" rel="noopener">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/connect4.png">
+                <div class="layer">
+                    <h3>Connect 4 App</h3>
+                    <p>My first Python Project I attempted. Created a Connect 4 Pygame for two players. Then created a version of Connect4 to play against AI.</p>
+                    <a href="https://github.com/TheTrevorK/Python-Projects/tree/main/Connect4" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/DataEDA.png">
+                <div class="layer">
+                    <h3>Covid Capstone Project</h3>
+                    <p> Investigated a Covid CDC data set containing 200,000 rows of data. Data cleaning, data analysis, and model creation was performed in determining the statistical relationships with patients being hospitalized.</p>
+                    <a href="https://github.com/TheTrevorK/Python-Projects/tree/main/Capstone-Project"target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/TableauDashboard.png">
+                <div class="layer">
+                    <h3>Pharmacy Tableau Dashboard</h3>
+                    <p> Implemented an interactive dashboard using pharmacy sales data alongside a PowerPoint slide deck to present an insight summary about financial problems the company was facing and potential solutions to solve those issues.</p>
+                    <a href="https://public.tableau.com/views/Pharmacy_Competitor_Comparison/CompetitorComparison?:language=en-US&:display_count=n&:origin=viz_share_link"target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/TheTrevorK"target="_blank" rel="noopener" class="btn"> See more </a>
+    </div>
+</div>
+<!------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Khan-Trevor@outlook.com</p>
+                <p><i class="fas fa-mobile-alt"></i>713-679-1541</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/trevor-khan53" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/TheTrevorK"target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="Trevor_Khan_Resume.pdf" download class="btn btn2">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Trevor Khan </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQAV86u3sq_8Kr49cSoHzqFjdTUTmXy0EXY4WmofNPPJjXm9n41bbH4wMM3oCMyNXN/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
