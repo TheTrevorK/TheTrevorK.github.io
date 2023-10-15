@@ -255,35 +255,43 @@ nav ul li a:hover::after{
 /*----------contact----*/
 .contact-left{
     flex-basis: 35%;
+     align-items: center;
 }
 .contact-right{
     flex-basis: 60%;
+     align-items: center;
 }
 .contact-left p{
     margin-top: 30px;
+     align-items: center;
 }
 .contact-left p i{
     color: #6d9bc3;
     margin-right: 15px;
     font-size: 25px;
+     align-items: center;
 }
 .social-icons{
     margin-top: 30px;
+     align-items: center;
 }
 .social-icons a{
    text-decoration: none;
    font-size: 30px;
    margin-right: 15px;
    color: #ababab;
-   display: inline-block; 
+   display: inline-block;
+   align-items: center;
 }
 .social-icons a:hover{
     color: #6d9bc3;
     transform: translateY(-5px);
+     align-items: center;
 }
 .btn.btn2{
     display: inline-block;
     background: #6d9bc3;
+     align-items: center;
 }
 .contact-right form{
     width: 100%;
